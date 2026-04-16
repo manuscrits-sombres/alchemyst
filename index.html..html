@@ -23,6 +23,14 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  <script>
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+
   body {
     background-color: var(--midnight);
     color: var(--parchment);
